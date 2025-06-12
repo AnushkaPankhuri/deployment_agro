@@ -69,7 +69,7 @@ import { useMemo } from 'react';
 
 // Create a plain axios instance
 const api = axios.create({
-    baseURL: 'http://localhost:8080',
+    baseURL: 'https://backend-4t74.onrender.com',
 });
 
 export const useApi = () => {
