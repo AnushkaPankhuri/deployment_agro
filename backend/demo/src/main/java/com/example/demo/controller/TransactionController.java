@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/transactions")
-@CrossOrigin(origins = "http://localhost:3000") // Adjust as per frontend
+@CrossOrigin(origins = "https://frontend-9rc8.onrender.com") // Adjust as per frontend
 public class TransactionController {
 
     @Autowired

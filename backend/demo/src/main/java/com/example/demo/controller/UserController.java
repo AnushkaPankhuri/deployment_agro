@@ -16,7 +16,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/user")
-@CrossOrigin(origins = "http://localhost:3000", allowCredentials = "true")
+@CrossOrigin(origins = "https://frontend-9rc8.onrender.com", allowCredentials = "true")
 public class UserController {
 
     private final UserRepository userRepository;
