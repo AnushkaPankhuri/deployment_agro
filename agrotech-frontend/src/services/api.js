@@ -78,7 +78,7 @@ export const useApi = () => {
     // Create a new axios instance with interceptor whenever user or auth changes
     const apiInstance = useMemo(() => {
         const instance = axios.create({
-            baseURL: 'http://localhost:8080',
+            baseURL: 'https://backend-4t74.onrender.com',
         });
 
         instance.interceptors.request.use(config => {
