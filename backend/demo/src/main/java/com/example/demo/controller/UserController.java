@@ -80,7 +80,7 @@ public class UserController {
 //    }
 
 
-    @PutMapping("/profile")
+    @PostMapping("/profile")
     public ResponseEntity<?> updateProfile(
             @RequestParam("phoneNumber") String phone,
             @RequestParam("address") String address,

@@ -44,7 +44,7 @@ function Profile() {
             // await api.put('/api/user/profile', formData, {
             //     headers: { 'Content-Type': 'multipart/form-data' },
             // });
-            await api.put('/api/user/profile', formData);
+            await api.post('/api/user/profile', formData);
 
             alert('Profile updated!');
             setEditMode(false);
