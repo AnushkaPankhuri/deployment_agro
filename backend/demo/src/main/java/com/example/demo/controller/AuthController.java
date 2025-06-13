@@ -16,14 +16,14 @@ public class AuthController {
     public AuthController(AuthService authService) {
         this.authService = authService;
     }
-
+//for farmer ka registration
     @PostMapping("/register/farmer")
     public ResponseEntity<User> registerFarmer(@RequestBody User user) {
         User savedUser = authService.registerFarmer(user);
         savedUser.setPassword(null);
         return ResponseEntity.ok(savedUser);
     }
-
+// for middlman ka registration
     @PostMapping("/register/middleman")
     public ResponseEntity<User> registerMiddleman(@RequestBody User user) {
         User savedUser = authService.registerMiddleman(user);
@@ -31,7 +31,7 @@ public class AuthController {
         return ResponseEntity.ok(savedUser);
     }
 
-
+//login controller
     @PostMapping("/login")
     public ResponseEntity<?> loginWithRole(@RequestBody LoginRequest loginRequest) {
         User user = authService.authenticateUserWithRole(
