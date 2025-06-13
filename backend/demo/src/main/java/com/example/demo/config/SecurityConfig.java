@@ -13,12 +13,12 @@
 //    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 //        return http
 //
-//                .csrf(csrf -> csrf.disable()) // ✅ new lambda-style config
+//                .csrf(csrf -> csrf.disable()) 
 //                .authorizeHttpRequests(auth -> auth
 //                        .requestMatchers("/api/auth/**").permitAll()
 //                        .anyRequest().authenticated()
 //                )
-//                .httpBasic(Customizer.withDefaults()) // ✅ replace .httpBasic() with this
+//                .httpBasic(Customizer.withDefaults()) 
 //                .build();
 //    }
 //}
