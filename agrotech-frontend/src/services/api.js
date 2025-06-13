@@ -91,6 +91,11 @@ export const useApi = () => {
                 const token = btoa(`${user.username}:${user.password}`);
                 config.headers.Authorization = `Basic ${token}`;
             }
+
+            if (config.data instanceof FormData) {
+                config.headers['Content-Type'] = 'multipart/form-data'; // optional but safe here
+            }
+
             return config;
         });
 
