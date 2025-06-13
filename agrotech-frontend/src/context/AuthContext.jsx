@@ -18,7 +18,7 @@ export function AuthProvider({ children }) {
         try {
             const response = await api.post('/api/auth/login', {
                 username,
-                password,
+                password,    //send json body to postmon on login
                 role,
             });
 
