@@ -150,7 +150,7 @@ public class User {
     public void setRole(Role role) {
         this.role = role;
     }
-
+//(column definition use hua tha mysql ke liye long blob)
     @Lob
     @Column(name = "profile_picture")
     private byte[] profilePicture;
