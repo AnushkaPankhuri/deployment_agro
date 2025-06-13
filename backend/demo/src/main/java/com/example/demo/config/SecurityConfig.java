@@ -37,7 +37,7 @@ package com.example.demo.config;
 //    @Bean
 //    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 //        return http
-//                .cors(Customizer.withDefaults()) // ✅ This tells Spring Security to use your WebMvcConfigurer CORS settings
+//                .cors(Customizer.withDefaults())
 //                .csrf(csrf -> csrf.disable())
 //                .authorizeHttpRequests(auth -> auth
 //                        .requestMatchers("/api/auth/**").permitAll()

@@ -56,7 +56,7 @@ public class PurchaseRequestController {
 
     @PutMapping("/{id}/status")
     public PurchaseRequest updateStatus(@PathVariable Long id, @RequestParam String status) {
-        // Validate status (case-insensitive)
+
         String normalizedStatus = status.trim().toLowerCase();
         if (!normalizedStatus.equals("pending") && !normalizedStatus.equals("fulfilled")) {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Status must be 'pending' or 'fulfilled'");
