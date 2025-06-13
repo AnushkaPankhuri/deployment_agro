@@ -17,15 +17,15 @@ public class PurchaseRequest {
 
     private String farmerUsername;
     private String cropType;
-    private double quantity; // in KG
+    private double quantity;
     private double price;
     private LocalDate requestDate;
     private LocalDate neededDate;
 
-    private String status = "pending"; // default
-    private String middlemanUsername;  // null initially
+    private String status = "pending";
+    private String middlemanUsername;
 
-    // Getters and setters
+
 
 
 }

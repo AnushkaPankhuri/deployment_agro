@@ -1,5 +1,5 @@
 import React from 'react';
-import './Button.css'; // Link to the CSS file
+import './Button.css';
 
 function Button({
   children,

@@ -62,23 +62,23 @@ public class PurchaseRequestController {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Status must be 'pending' or 'fulfilled'");
         }
 
-        // Find the PurchaseRequest
+
         PurchaseRequest pr = repo.findById(id)
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "PurchaseRequest with id " + id + " not found"));
 
-        // Get the authenticated middleman's username
+
         String middlemanUsername = null;
         Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         if (principal instanceof UserDetails) {
             middlemanUsername = ((UserDetails) principal).getUsername();
         }
 
-        // Update status and middlemanUsername
+
         pr.setStatus(normalizedStatus);
         if (normalizedStatus.equals("fulfilled")) {
             pr.setMiddlemanUsername(middlemanUsername);
         } else {
-            pr.setMiddlemanUsername(null); // Set to null for pending (unaccept)
+            pr.setMiddlemanUsername(null);
         }
 
         return repo.save(pr);}

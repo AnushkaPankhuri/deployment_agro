@@ -91,7 +91,7 @@ function Profile() {
 
                 <div className="profile-content">
                     <form>
-                        {/* Personal Information Section */}
+
                         <div className="form-section">
                             <h5 className="section-title">🌾 Personal Information</h5>
                             {personalFields.map((field) => (
@@ -111,7 +111,7 @@ function Profile() {
                             ))}
                         </div>
 
-                        {/* Business Information Section */}
+
                         <div className="form-section business-fields">
                             <h5 className="section-title">🏢 Business Details</h5>
                             {businessFields.map((field) => (
@@ -132,7 +132,7 @@ function Profile() {
                         </div>
                     </form>
 
-                    {/* Action Buttons */}
+
                     <div className="button-container">
                         <button
                             className="btn btn-outline-secondary"

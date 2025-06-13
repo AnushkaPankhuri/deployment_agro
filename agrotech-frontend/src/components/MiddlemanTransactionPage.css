@@ -1,142 +1,4 @@
-/* .transaction-page-container {
-    background-color: #f8f9fa;
-    min-height: 100vh;
-}
 
-.page-header {
-    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
-    position: relative;
-    overflow: hidden;
-}
-
-.page-header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover;
-    opacity: 0.2;
-}
-
-.header-decoration {
-    height: 5px;
-    width: 100px;
-    background: white;
-    margin: 15px auto;
-    border-radius: 5px;
-}
-
-.transaction-card {
-    border: none;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.transaction-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
-}
-
-.card-header {
-    border-radius: 15px 15px 0 0 !important;
-    font-weight: 600;
-}
-
-.transaction-detail {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.transaction-detail i {
-    font-size: 1.5rem;
-    margin-right: 15px;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-}
-
-.farmer-icon {
-    background-color: rgba(40, 167, 69, 0.2);
-    color: #28a745;
-}
-
-.middleman-icon {
-    background-color: rgba(13, 110, 253, 0.2);
-    color: #0d6efd;
-}
-
-.transaction-metric {
-    display: flex;
-    align-items: center;
-}
-
-.transaction-metric i {
-    font-size: 1.2rem;
-    margin-right: 10px;
-    color: #6c757d;
-}
-
-.transaction-metric p {
-    margin-bottom: 0;
-    font-size: 1.1rem;
-}
-
-.transaction-metric small {
-    color: #6c757d;
-    font-size: 0.8rem;
-}
-
-.divider {
-    border-top: 1px dashed #dee2e6;
-    margin: 1rem 0;
-}
-
-.profile-btn {
-    border-radius: 20px;
-    padding: 5px 15px;
-    transition: all 0.3s ease;
-}
-
-.profile-btn:hover {
-    background-color: #0d6efd;
-    color: white;
-}
-
-.empty-state {
-    background: white;
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-}
-
-/* Animation for cards */
-/* @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-.col-lg-4 {
-    animation: fadeIn 0.5s ease forwards;
-}
-
-.col-lg-4:nth-child(1) { animation-delay: 0.1s; }
-.col-lg-4:nth-child(2) { animation-delay: 0.2s; }
-.col-lg-4:nth-child(3) { animation-delay: 0.3s; }
-.col-lg-4:nth-child(4) { animation-delay: 0.4s; }
-.col-lg-4:nth-child(5) { animation-delay: 0.5s; }
-.col-lg-4:nth-child(6) { animation-delay: 0.6s; }  */
-
-
-
-/* Base Styles */
 .agri-transaction-app {
     background-color: #f8f9fa;
     min-height: 100vh;
@@ -145,7 +7,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Animated Background Elements */
+
 .leaf-decor {
     position: absolute;
     background-size: contain;
@@ -187,7 +49,6 @@
     50% { transform: translateY(-20px) rotate(5deg); }
 }
 
-/* Header Styles */
 .page-header-container {
     background: linear-gradient(135deg, #2e7d32 0%, #7cb342 100%);
     padding: 5rem 0;
@@ -274,7 +135,7 @@
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* Transaction Cards */
+
 .transaction-card {
     border: none;
     border-radius: 15px;
@@ -600,9 +461,9 @@
         margin-bottom: 10px;
     }
 }
-/* Add these new styles to your existing CSS */
 
-/* Refresh Button Styles */
+
+
 .refresh-button {
     background: linear-gradient(135deg, #2e7d32 0%, #7cb342 100%);
     color: white;

@@ -6,7 +6,7 @@ function Home() {
   return (
     <div className="main">
 
-      {/* Hero Section */}
+
       <section className="hero">
         <div className="badge">🌱 Connecting Agriculture</div>
         <h1>
@@ -23,7 +23,7 @@ function Home() {
         </div> */}
       </section>
 
-      {/* Features Section */}
+
       <section className="features">
         <h2>Why Choose AgroTech?</h2>
         <p>Our platform provides everything you need for successful agricultural trading</p>
@@ -51,7 +51,7 @@ function Home() {
         </div>
       </section>
 
-      {/* How It Works */}
+
       <section className="how-it-works">
         <h2>How AgroTech Works</h2>
         <p>Simple steps to start trading agricultural products</p>
@@ -74,7 +74,7 @@ function Home() {
         </div>
       </section>
 
-      {/* Benefits */}
+
       <section className="benefits">
         <div className="benefits-grid">
           <div>
@@ -107,7 +107,7 @@ function Home() {
         </div>
       </section>
 
-      {/* CTA */}
+
       <section className="cta">
         <h2>Ready to Transform Your Agricultural Business?</h2>
         <p>Join thousands of farmers and middlemen already using AgroTech</p>

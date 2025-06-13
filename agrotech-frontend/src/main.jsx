@@ -12,7 +12,7 @@ function App() {
                 <Route path="/" element={<FrontPage />} />
                 <Route path="/login" element={<LoginForm />} />
                 <Route path="/register" element={<FarmerRegisterForm />} />
-                {/* You can add a role selector later to route to either farmer or middleman */}
+
             </Routes>
         </Router>
     );

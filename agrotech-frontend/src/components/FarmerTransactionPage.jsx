@@ -61,7 +61,7 @@
 //     );
 // };
 
-// export default FarmerTransactionPage;
+
 
 
 import React, { useEffect, useState } from "react";
@@ -137,7 +137,7 @@ const FarmerTransactionPage = () => {
 
     return (
         <div className="farmer-transaction-app">
-            {/* Nature Background Elements */}
+
             <div className="grain-decor grain-1"></div>
             <div className="grain-decor grain-2"></div>
             <div className="grain-decor grain-3"></div>
@@ -157,7 +157,7 @@ const FarmerTransactionPage = () => {
             </div>
 
             <div className="container-fluid py-5 main-content">
-                {/* Refresh Button */}
+
                 <div className="text-center mb-4">
                     <button 
                         onClick={fetchTransactions}

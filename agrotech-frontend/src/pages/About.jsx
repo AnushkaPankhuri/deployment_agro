@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Users, ShieldCheck, TrendingUp, Globe, Check } from 'lucide-react';
-import Button from '../components/ui/Button';
-import './About.css'; // custom CSS
+
+import './About.css';
 
 import Avinash from '../images/teamMembers/AVINASH.jpeg';
 import Anushka from '../images/teamMembers/ANUSHKA.jpeg';
@@ -31,7 +31,7 @@ function About() {
 
   return (
     <div className="about-page">
-      {/* Hero Section */}
+
       <section className="hero-section">
         <div className="hero-overlay" />
         <img
@@ -47,7 +47,7 @@ function About() {
         </div>
       </section>
 
-      {/* Mission Section */}
+
       <section className="mission-section">
         <div className="mission-container">
           <div className="mission-text">
@@ -85,7 +85,7 @@ function About() {
         </div>
       </section>
 
-      {/* Values Section */}
+
       <section className="values-section">
         <div className="section-header">
           <h2>Our Core Values</h2>
@@ -139,7 +139,7 @@ function About() {
         </div>
       </section>
 
-      {/* Team Section */}
+
       <section className="team-section">
         <div className="section-header">
           <h2>Meet Our Team</h2>
@@ -163,7 +163,7 @@ function About() {
         </div>
       </section>
 
-      {/* CTA Section */}
+
       <section className="cta-section">
         <h2>Join the Agricultural Revolution</h2>
         <p>

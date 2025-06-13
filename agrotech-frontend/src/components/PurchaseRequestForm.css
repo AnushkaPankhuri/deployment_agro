@@ -1,6 +1,4 @@
-/* PurchaseRequestForm.css */
 
-/* Base Styles */
 .purchase-request-container {
     background-color: #f8f9fa;
     min-height: 100vh;
@@ -23,7 +21,7 @@
     border-radius: 3px;
 }
 
-/* Form Card Styles */
+
 .request-form-card {
     border-radius: 15px;
     overflow: hidden;
@@ -38,7 +36,7 @@
     border-radius: 0 !important;
 }
 
-/* Input Styles */
+
 .form-control, .form-select {
     border-radius: 10px;
     padding: 0.75rem 1rem;
@@ -57,7 +55,7 @@
     font-weight: 500;
 }
 
-/* Button Styles */
+
 .submit-btn {
     border-radius: 10px;
     font-weight: 600;
@@ -90,7 +88,7 @@
     left: 100%;
 }
 
-/* Requests List Styles */
+
 .requests-list {
     border-radius: 15px;
     overflow: hidden;
@@ -133,7 +131,7 @@
     justify-content: center;
 }
 
-/* Responsive Adjustments */
+
 @media (max-width: 768px) {
     .section-header h1 {
         font-size: 2rem;
@@ -150,7 +148,7 @@
     }
 }
 
-/* Animation */
+
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }

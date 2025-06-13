@@ -1,4 +1,4 @@
-/* Base Styles */
+
 .farmer-transaction-app {
     background-color: #f8f9fa;
     min-height: 100vh;
@@ -7,7 +7,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Nature Background Elements */
+
 .grain-decor {
     position: absolute;
     background-size: contain;
@@ -49,7 +49,7 @@
     50% { transform: translateY(-20px) rotate(5deg); }
 }
 
-/* Header Styles */
+
 .farmer-header-container {
     background: linear-gradient(135deg, #5d4037 0%, #8d6e63 100%);
     padding: 5rem 0;
@@ -105,7 +105,7 @@
     font-size: 1.2rem;
 }
 
-/* Refresh Button Styles */
+
 .refresh-button {
     background: linear-gradient(135deg, #5d4037 0%, #8d6e63 100%);
     color: white;
@@ -144,7 +144,7 @@
     transform: rotate(360deg);
 }
 
-/* Transaction Cards */
+
 .transaction-card {
     border: none;
     border-radius: 15px;

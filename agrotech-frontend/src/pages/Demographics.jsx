@@ -20,7 +20,7 @@ import SelectInput from '../components/forms/SelectInput';
 import { toast } from 'react-toastify';
 import './Demographics.css'; 
 
-// Register ChartJS components
+
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -40,7 +40,7 @@ function Demographics() {
   const [selectedCrop, setSelectedCrop] = useState('all');
   const [selectedTimeframe, setSelectedTimeframe] = useState('year');
 
-  // Load data (simulated with setTimeout)
+
   useEffect(() => {
     setIsLoading(true);
 
@@ -51,7 +51,7 @@ function Demographics() {
     return () => clearTimeout(loadData);
   }, [selectedRegion, selectedCrop, selectedTimeframe]);
 
-  // Mock data for charts
+
   const marketTrendsData = {
     labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
     datasets: [
@@ -142,10 +142,10 @@ function Demographics() {
 
   return (
     <div className="demographics-page">
-      {/* Hero Section */}
+
       <section className="hero-section">
         <div className="container-custom">
-          <div className="max-w-3xl"> {/* This max-w-3xl is a utility, ideally you'd manage max-width with the container or specific element styles */}
+          <div className="max-w-3xl">
             <h1 className="hero-title">
               Agricultural Market Insights
             </h1>
@@ -178,7 +178,7 @@ function Demographics() {
                     { value: 'west', label: 'West' },
                     { value: 'northeast', label: 'Northeast' },
                   ]}
-                  className="select-input-py-1" /* Apply custom class for padding */
+                  className="select-input-py-1"
                   fullWidth={false}
                 />
               </div>
@@ -222,7 +222,7 @@ function Demographics() {
         </div>
       </section>
 
-      {/* Stats Overview Section */}
+
       <section className="stats-section">
         <div className="container-custom">
           <div className="stats-grid">
@@ -245,7 +245,7 @@ function Demographics() {
               </div>
             </Card>
 
-            {/* Stat 2 */}
+
             <Card className="stat-card" hoverEffect={true}>
               <div className="stat-content">
                 <div className="stat-icon-wrapper">
@@ -264,7 +264,7 @@ function Demographics() {
               </div>
             </Card>
 
-            {/* Stat 3 */}
+
             <Card className="stat-card" hoverEffect={true}>
               <div className="stat-content">
                 <div className="stat-icon-wrapper">

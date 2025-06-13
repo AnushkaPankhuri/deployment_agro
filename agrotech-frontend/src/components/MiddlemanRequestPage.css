@@ -1,6 +1,6 @@
-/* MiddlemanRequestsPage.css */
 
-/* Base Styles */
+
+
 .middleman-requests-container {
     background-color: #f8f9fa;
     min-height: 100vh;
@@ -23,7 +23,7 @@
     border-radius: 3px;
 }
 
-/* Request Card Styles */
+
 .request-card {
     border-radius: 12px;
     overflow: hidden;
@@ -50,7 +50,7 @@
     border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-/* User Avatar */
+
 .user-avatar {
     width: 50px;
     height: 50px;
@@ -61,7 +61,7 @@
     justify-content: center;
 }
 
-/* Price Display */
+
 .price-display {
     background-color: rgba(25, 135, 84, 0.05);
     padding: 1rem;
@@ -79,7 +79,7 @@
     justify-content: center;
 }
 
-/* Filter Controls */
+
 .filter-controls {
     display: flex;
     justify-content: center;
@@ -97,7 +97,7 @@
     border: none;
 }
 
-/* Empty State */
+
 .empty-state {
     background-color: white;
     border-radius: 12px;
@@ -105,14 +105,14 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
-/* Badges */
+
 .badge {
     padding: 0.5em 0.8em;
     font-weight: 500;
     letter-spacing: 0.5px;
 }
 
-/* Buttons */
+
 .btn-lg {
     padding: 0.5rem 1.5rem;
     font-weight: 500;
@@ -130,7 +130,7 @@
     box-shadow: 0 5px 15px rgba(25, 135, 84, 0.4);
 }
 
-/* Animation */
+
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
@@ -140,7 +140,7 @@
     animation: fadeIn 0.5s ease forwards;
 }
 
-/* Responsive Adjustments */
+
 @media (max-width: 768px) {
     .section-header h1 {
         font-size: 2rem;

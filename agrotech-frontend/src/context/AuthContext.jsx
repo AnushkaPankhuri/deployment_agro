@@ -1,21 +1,3 @@
-// import { createContext, useContext, useState } from 'react';
-//
-// const AuthContext = createContext();
-//
-// export const useAuth = () => useContext(AuthContext);
-//
-// export const AuthProvider = ({ children }) => {
-//     const [user, setUser] = useState(null);
-//
-//     const login = (userData) => setUser(userData);
-//     const logout = () => setUser(null);
-//
-//     return (
-//         <AuthContext.Provider value={{ user, login, logout }}>
-//             {children}
-//         </AuthContext.Provider>
-//     );
-// };
 
 
 import React, { createContext, useState, useContext } from 'react';
@@ -23,7 +5,7 @@ import api from '../services/api';
 
 const AuthContext = createContext();
 
-// This is the hook you use in your components to get auth info and methods
+
 export function useAuth() {
     return useContext(AuthContext);
 }
@@ -40,10 +22,10 @@ export function AuthProvider({ children }) {
                 role,
             });
 
-            // Create Basic Auth token for later API calls
+
             const token = btoa(`${username}:${password}`);
 
-            // Store user info plus token and raw credentials for auth header
+
             setUser({
                 ...response.data,
                 username,
