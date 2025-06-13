@@ -19,12 +19,14 @@ export const useApi = () => {
         });
 
         instance.interceptors.request.use(config => {
+
+            //logs taki console pr print kara ske if the request url and method and header is correct or not
             console.log('Request URL:', config.url);
             console.log('Request method:', config.method);
             console.log('Request headers before sending:', config.headers);
 
             if (isAuthenticated && user) {
-
+                // authorization header
                 const token = btoa(`${user.username}:${user.password}`);
                 config.headers.Authorization = `Basic ${token}`;
             }
